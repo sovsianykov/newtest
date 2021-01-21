@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
 
+
 const useStyles = makeStyles({
     root: {
         width: 345,
@@ -24,7 +25,7 @@ export default function Stage1(props) {
 
     return (
         <Card className={classes.root}>
-            <CardActionArea>
+            <CardActionArea >
                 <CardMedia
                     className={classes.media}
                     image= {props.url}
