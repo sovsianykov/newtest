@@ -9,15 +9,15 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
-        margin: '100px auto'  ,
+        width: 345,
+        margin: "0 auto,"
+
+
     },
     media: {
         height: 350,
     },
 });
-
-
 
 export default function Stage1(props) {
     const classes = useStyles();

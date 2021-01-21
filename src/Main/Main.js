@@ -1,6 +1,7 @@
 import React from 'react'
 import Stage1 from "./Stages/Stage1";
 import '../App.css'
+import {Container} from "@material-ui/core";
 
 
 function Main() {
@@ -56,21 +57,22 @@ function Main() {
 
         }
     }
-    let cont = document.querySelector('.cont')
+    const body = document.querySelector('body')
+
 
     document.addEventListener('DOMContentLoaded', myFetch() )
-    cont.addEventListener('click', (event) => myFetch())
+    body.addEventListener('click', (e) => myFetch())
 
 
 
     return (
-        <>
-            <div className="cont">
+
+            <div id='container'>
           <Stage1 className ="output" url={store[0].url}
           />
             </div>
 
-        </>
+
     );
 }
 
